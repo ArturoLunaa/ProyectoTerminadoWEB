@@ -1,0 +1,21 @@
+<div>
+    <h1>Bienestar y Salud</h1>
+    <!--Articulos dinamicos-->
+    
+    <article *ngFor="let item of Articulos">
+      <div>
+        <h2>{{item.title}}</h2>
+        <p>
+          {{item.content}}
+        </p>
+        <h3>{{item.autor}}</h3>
+        <img src="{{item.image}}">
+        <a routerLink="{{item.ruta}}">Artículo completo</a>
+      </div>
+    </article>
+    
+    
+      
+    
+    
+  </div>
