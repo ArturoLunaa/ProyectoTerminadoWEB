@@ -13,14 +13,14 @@
             "content": "Una educación de calidad es el cimiento de la salud y el bienestar. Para llevar una vida productiva y saludable, cada individuo debe poseer los conocimientos necesarios para la prevención de enfermedades y patologías. Para estudiar como es debido, los niños y los adolescentes necesitan una alimentación adecuada y gozar de buena salud.",
             "autor": "Oceano educacion",
             "ruta": "/articulo-dos",
-            "image": ""
+            "image": "./assets/img/imagen1.jpg"
         },
         {
             "title": "Estado de bienestar y salud publica: El papel de la salud laboral",
             "content": "En el contexto de la actual crisis del Estado de bienestar, la salud laboral puede contribuir significativamente a su sostenibilidad, facilitando un trabajo decente y saludable a lo largo de la vida laboral de las personas que trabajan. ",
             "autor": "Fernando G. Benavides, Jordi Delclós, Consol Serra",
             "ruta": "/articulo-tres",
-            "image": ""
+            "image": "./assets/img/imagen5.jpg"
         },
 
         {
@@ -28,7 +28,7 @@
             "content": "Hemos logrado grandes avances en la lucha contra varias de las principales causas de muerte y enfermedad. La esperanza de vida ha aumentado drásticamente, las tasas de mortalidad infantil y materna han disminuido, hemos cambiado el curso del VIH y la mortalidad debida a la malaria se ha reducido a la mitad.",
             "autor": "Programa de las Naciones Unidas para el Desarrollo",
             "ruta": "/articulo-cuatro",
-            "image": ""
+            "image": "./assets/img/imagen3.jpg"
         },
 
         {
@@ -36,7 +36,7 @@
             "content": "El autocuidado es un proceso continuo que arranca desde las opciones saludables que adopta un individuo, pasando por el reconocimiento y manejo personal de los problemas de salud que le aquejan, hasta el hecho de recurrir a un médico.",
             "autor": "afamela",
             "ruta": "/articulo-cinco",
-            "image": ""
+            "image": "./assets/img/imagen2.jpg"
         }
 
         
