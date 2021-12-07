@@ -1,0 +1,46 @@
+
+<div class="form-container">
+    <h1>¡Contáctanos!</h1>
+    <form [formGroup]="formularioContacto" (ngSubmit)="Guardar()">
+        <label for="lblNombres">Nombre</label>
+        <input id="nombresInput" type="text" formControlName="nombres" placeholder="Introduce tu nombre">
+        <div class="alert-danger" *ngIf="nombres?.invalid && (nombres?.dirty || nombres?.touched)">
+            <div class="mensaje-error">
+                El campo de nombres es obligatorio. Mínimo 3 caracteres.
+            </div>
+        </div>
+        <label for="lblApellidos">Apellidos</label>
+        <input id="apellidosInput" type="text" formControlName="apellidos" placeholder="Introduce tus apellidos">
+        <div class="alert-danger" *ngIf="apellidos?.invalid && (apellidos?.dirty || apellidos?.touched)">
+            <div class="mensaje-error">
+                El campo de apellidos es obligatorio. Mínimo 3 caracteres.
+            </div>
+        </div>
+        <label for="lblTelefono">Teléfono</label>
+        <input id="telefonoInput" type="text" formControlName="telefono" placeholder="Introduce tu telefono">
+        <div class="alert-danger" *ngIf="telefono?.invalid && (telefono?.dirty || telefono?.touched)">
+            <div class="mensaje-error">
+                El campo de teléfono es obligatorio. Asegurese de ingresar un número válido y de 10 caracteres.
+            </div>
+        </div>
+        <label for="lblCorreo">Correo</label>
+        <input id="correoInput" type="text" formControlName="correo" placeholder="Introduce tu correo">
+        <div class="alert-danger" *ngIf=" (correo?.dirty || correo?.touched) && correo?.invalid">
+            <div class="mensaje-error">
+                El campo de correo es obligatorio.
+            </div>
+            <div class="mensaje-error" *ngIf=" (correo?.dirty || correo?.touched) && correo?.errors?.pattern" >
+                Asegurese de que sea un correo válido.
+            </div>
+        </div>
+        <label for="lblComents">Comentarios</label>
+        <textarea id="comentariosInput" type="text" formControlName="comentarios" placeholder="Nos interesa saber tus comentarios..."></textarea>
+        <div class="alert-danger" *ngIf="comentarios?.invalid && (comentarios?.dirty || comentarios?.touched)">
+            <div class="mensaje-error">
+                El campo de comentarios es obligatorio. Máximo 200 caracteres.
+            </div>
+        </div>
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+</div>
+

@@ -7,6 +7,8 @@ import { ArticuloTresComponent } from './components/articulo-tres/articulo-tres.
 import { ArticuloCuatroComponent } from './components/articulo-cuatro/articulo-cuatro.component';
 import { ArticuloCincoComponent } from './components/articulo-cinco/articulo-cinco.component';
 import { HomeComponent } from './components/home/home.component';
+import {FormularioComponent} from './components/formulario/formulario.component'
+import { GaleriaComponent } from './components/galeria/galeria.component';
 
 
 const routes: Routes = [
@@ -17,6 +19,8 @@ const routes: Routes = [
   {path:'articulo-tres', component:ArticuloTresComponent},
   {path:'articulo-cuatro',component:ArticuloCuatroComponent},
   {path:'articulo-cinco',component:ArticuloCincoComponent},
+  {path:'formulario',component:FormularioComponent},
+  {path:'galeria',component:GaleriaComponent},
   {path:'**', redirectTo:'home'}
 ];
 

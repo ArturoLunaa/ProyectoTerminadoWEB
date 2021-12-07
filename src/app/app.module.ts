@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -12,6 +13,10 @@ import { ArticuloDosComponent } from './components/articulo-dos/articulo-dos.com
 import { ArticuloTresComponent } from './components/articulo-tres/articulo-tres.component';
 import { ArticuloCuatroComponent } from './components/articulo-cuatro/articulo-cuatro.component';
 import { ArticuloCincoComponent } from './components/articulo-cinco/articulo-cinco.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { GaleriaComponent } from './components/galeria/galeria.component';
+
 
 @NgModule({
   declarations: [
@@ -21,11 +26,15 @@ import { ArticuloCincoComponent } from './components/articulo-cinco/articulo-cin
     ArticuloDosComponent,
     ArticuloTresComponent,
     ArticuloCuatroComponent,
-    ArticuloCincoComponent
+    ArticuloCincoComponent,
+    NavbarComponent,
+    FormularioComponent,
+    GaleriaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule
     
   ],
   providers: [],
